@@ -319,6 +319,19 @@ input, select, textarea {
 		border-bottom-color: #eeeeee;
 	}
 
+/* Scroll to Top */
+
+	#totop {
+		position: fixed;
+		bottom: 20px;
+		right: 40px;
+		z-index: 99;		
+	}
+
+	#btn {
+		background-color: #ffffff !important;
+	}
+
 /* Row */
 
 	.row {
