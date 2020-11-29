@@ -13,7 +13,14 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
-
+				
+				<!-- Scroll to Top -->
+					<div id="totop">
+						<ul class="actions">
+							<li><a href="#wrapper" id="btn" class="button icon solid solo fa-arrow-up scrolly">Top</a></li>
+						</ul>
+					</div>
+				
 				<!-- Intro -->
 					<div id="intro">
 						<h1>Student Dashboard</h1>
@@ -423,6 +430,23 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+
+				mybutton = document.getElementById("totop");
+
+				window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+				  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+				    mybutton.style.display = "block";
+				  } else {
+				    mybutton.style.display = "none";
+				  }
+				}
+				function topFunction() {
+				  document.documentElement.scrollTop = 0;
+				}
+			</script>
 
 	</body>
 </html>
